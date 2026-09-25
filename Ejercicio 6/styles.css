@@ -1,0 +1,23 @@
+
+#contenedor-principal {
+    background-color: #e0e0e0;
+    padding: 30px;
+}
+
+
+.tarjeta {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 15px;
+}
+
+.texto-destacado {
+    color: #d9534f;
+}
+
+
+.tarjeta span {
+    font-weight: bold;
+    color: #0275d8;
+    background-color: #f0f8ff;
+}

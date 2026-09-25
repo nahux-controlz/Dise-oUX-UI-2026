@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+.radio-oculto {
+    display: none;
+}
+
+.seccion-paso {
+    display: none;
+}
+
+#paso1:checked ~ #seccion-paso1,
+#paso2:checked ~ #seccion-paso2 {
+    display: block;
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.grupo-input input:required {
+    border-left: 5px solid #007bff;
+}
+
+.grupo-input input:valid {
+    border-color: #28a745;
+    border-left-color: #28a745;
+}
+
+.grupo-input input:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+    border-left-color: #dc3545;
+}
+
+.btn-navegacion, .btn-enviar {
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.btn-siguiente {
+    background-color: #007bff;
+    width: 100%;
+}
+
+.btn-siguiente:hover { background-color: #0056b3; }
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-volver {
+    background-color: #6c757d;
+    flex: 1;
+}
+
+.btn-volver:hover { background-color: #5a6268; }
+
+.btn-enviar {
+    background-color: #28a745;
+    flex: 2;
+}
+
+.btn-enviar:hover { background-color: #218838; }

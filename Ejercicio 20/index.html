@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 20 - Proyecto Integrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAV BAR FIJA -->
+    <header class="cabecera-fija">
+        <nav class="navbar">
+            <div class="logo">TechSetup</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#productos">Equipos</a></li>
+                <li><a href="#testimonios">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN HERO -->
+        <section id="hero" class="seccion-hero">
+            <div class="hero-contenido">
+                <h1>Armá tu Setup Definitivo</h1>
+                <p>Hardware de alto rendimiento para llevar tus partidas al siguiente nivel.</p>
+                <a href="#productos" class="btn-primario">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRODUCTOS (GRID) -->
+        <section id="productos" class="seccion-padding bg-claro">
+            <h2 class="titulo-seccion">Nuestros Equipos</h2>
+            <div class="grid-productos">
+                <div class="tarjeta-prod">
+                    <h3>Laptops Gaming</h3>
+                    <p>Potencia portátil. Especialistas en línea ASUS TUF F15 con 32GB de RAM para máximo rendimiento.</p>
+                </div>
+                <div class="tarjeta-prod">
+                    <h3>Periféricos</h3>
+                    <p>Precisión absoluta con auriculares HyperX Cloud 3 y periféricos de grado competitivo.</p>
+                </div>
+                <div class="tarjeta-prod">
+                    <h3>Juegos y Suscripciones</h3>
+                    <p>Tarjetas de regalo y pases para EA Sports FC, simuladores de carreras y shooters tácticos como Hell Let Loose.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN TESTIMONIOS (CARRUSEL SCROLL-SNAP) -->
+        <section id="testimonios" class="seccion-padding bg-oscuro">
+            <h2 class="titulo-seccion texto-blanco">Lo que dicen nuestros clientes</h2>
+            <div class="carrusel-testimonios">
+                <div class="testimonio">
+                    <p>"Me armaron la notebook impecable para la facultad y para viciar el finde. 10/10."</p>
+                    <h4>- Alejo Fernandez</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"Excelente atención. Pude comprar mis auriculares con la billetera virtual sin problemas."</p>
+                    <h4>- Martín S.</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"La optimización del sistema hizo que mis juegos corran a más de 120 FPS."</p>
+                    <h4>- Lucas G.</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"Envío rápido por correo y todo llegó en perfectas condiciones."</p>
+                    <h4>- Sofía R.</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO (FORMULARIO) -->
+        <section id="contacto" class="seccion-padding bg-claro">
+            <h2 class="titulo-seccion">Contactanos</h2>
+            <form class="form-contacto">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="mensaje">Consulta</label>
+                    <textarea id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primario">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-sitio">
+        <p>&copy; 2026 TechSetup. Proyecto Integrador - Licenciatura en Sistemas de Información.</p>
+    </footer>
+
+</body>
+</html>
